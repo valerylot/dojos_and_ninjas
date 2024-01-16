@@ -1,0 +1,366 @@
+{
+  "canvas": {
+    "version": "2.2.12",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -15,
+    "scrollLeft": -14,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "dojos_and_ninjas_schema.db",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "31338f27-8e06-4a81-a1e6-2682bd936b97",
+        "name": "dojos",
+        "comment": "",
+        "columns": [
+          {
+            "id": "d241a3de-9e19-469a-ab81-6a0807ecea34",
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "30536fe2-d0da-41c7-a1f7-77703ce8e3cd",
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9aec6cea-16ec-46e9-90af-326c5e712bdb",
+            "name": "created_at",
+            "comment": "",
+            "dataType": "timestamp",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 61.9599609375,
+              "widthDefault": 147.65966796875
+            }
+          },
+          {
+            "id": "a58397ee-2e5d-4e4a-8906-9be876d58bc3",
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "timestamp",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 375.42626953125
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 19,
+          "top": 19,
+          "zIndex": 47,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "e4bfa668-a312-4e48-a1e4-9f032dc15d20",
+        "name": "ninjas",
+        "comment": "",
+        "columns": [
+          {
+            "id": "055e446d-5e23-48d7-946b-ca66d3e3093e",
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b2837e36-5ffb-4c2d-8edd-fdb83bacff5f",
+            "name": "created_at",
+            "comment": "",
+            "dataType": "timestamp",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 61.9599609375,
+              "widthDefault": 147.65966796875
+            }
+          },
+          {
+            "id": "d80325bf-ff86-4586-9c9e-819a840e316b",
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "timestamp",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 375.42626953125
+            }
+          },
+          {
+            "id": "dc8b6490-0e49-42da-b4a7-1c8b4335d8d4",
+            "name": "first_name",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.68994140625,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d460d2c2-318c-48d5-afc9-7dd8f5965fb4",
+            "name": "last_name",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.97900390625,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "95d8e76d-b370-420d-a737-c96f57a3579d",
+            "name": "age",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9e5dc55d-8ea1-49b4-b6b6-76fad503096b",
+            "name": "dojo_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 18,
+          "top": 292,
+          "zIndex": 52,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "2cddbec2-b0b2-4e68-aec1-f43a0f0012cb",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "31338f27-8e06-4a81-a1e6-2682bd936b97",
+          "columnIds": [
+            "d241a3de-9e19-469a-ab81-6a0807ecea34"
+          ],
+          "x": 394.722412109375,
+          "y": 170,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "e4bfa668-a312-4e48-a1e4-9f032dc15d20",
+          "columnIds": [
+            "9e5dc55d-8ea1-49b4-b6b6-76fad503096b"
+          ],
+          "x": 393.722412109375,
+          "y": 292,
+          "direction": "top"
+        },
+        "constraintName": "fk_dojos_to_ninjas",
+        "visible": true
+      }
+    ]
+  }
+}
