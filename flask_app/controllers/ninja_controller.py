@@ -1,5 +1,5 @@
 from flask_app import app
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, url_for
 from flask_app.models.ninja_model import Ninja
 from flask_app.models.dojo_model import Dojo
 
@@ -18,4 +18,6 @@ def add_ninjas():
 def create_ninjas():
     Ninja.save(request.form)
     print(request.form)
-    return redirect ('/dojos')
+    # return redirect ('/dojos')
+    dojo_id = request.form["dojo_id"]
+    return redirect (url_for('show_dojo', id = dojo_id))
